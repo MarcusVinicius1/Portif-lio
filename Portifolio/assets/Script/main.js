@@ -24,21 +24,6 @@ function CreateCardProjects() {
         ContainerCard.innerHTML += CardProjetos
         ProjetosContainer.innerHTML += CardProjetos
     }
-
-    // Projetos
-    /*for (let j = 0; j < ListaProjetos.length; j++) {
-        const CardProjetos = `<div class="CardProjetos">
-                                <img src="${ListaProjetos[j].Img}">
-                                <span>${ListaProjetos[j].Nome}</span>
-
-                                <div class="Controls">
-                                    <button>Acessar</button>
-                                    <button>Github</button>
-                                </div>
-                            </div>`
-
-        ProjetosContainer.innerHTML += CardProjetos
-    }*/
 }
 
 CreateCardProjects()
