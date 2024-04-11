@@ -9,7 +9,7 @@ if (innerWidth <= 430) IconTitle.setAttribute("href", 'assets/Icon/curriculo-mob
 else IconTitle.setAttribute("href", 'assets/Icon/curriculo-pc.png')
 
 function CreateCardProjects() {
-    // Home
+    // Seção do Home e Projetos
     for (let i = 0; i < ListaProjetos.length; i++) {
         const CardProjetos = `<div class="CardProjetos">
                                 <img src="${ListaProjetos[i].Img}">
@@ -22,10 +22,11 @@ function CreateCardProjects() {
                             </div>`
 
         ContainerCard.innerHTML += CardProjetos
+        ProjetosContainer.innerHTML += CardProjetos
     }
 
     // Projetos
-    for (let j = 0; j < ListaProjetos.length; j++) {
+    /*for (let j = 0; j < ListaProjetos.length; j++) {
         const CardProjetos = `<div class="CardProjetos">
                                 <img src="${ListaProjetos[j].Img}">
                                 <span>${ListaProjetos[j].Nome}</span>
@@ -37,7 +38,7 @@ function CreateCardProjects() {
                             </div>`
 
         ProjetosContainer.innerHTML += CardProjetos
-    }
+    }*/
 }
 
 CreateCardProjects()
